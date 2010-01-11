@@ -23,8 +23,8 @@ module GeozipAutocomplete
 
   def zip_complete
     normalize_country_code
-    invalid_zip_format_error and return if invalid_zip_format?(params[:zip], params[:country_code])
     begin
+      invalid_zip_format_error and return if invalid_zip_format?(params[:zip], params[:country_code])
       geocode = GoogleGeocoder.geocode("#{params[:zip]}, #{params[:country_code]}", :bias => params[:country_code])
       in_country_geocode = geocode.all.find{ |g| g.country_code.downcase.to_sym == params[:country_code] }
       geo_loc = GoogleGeocoder.do_reverse_geocode(in_country_geocode.to_lat_lng)
