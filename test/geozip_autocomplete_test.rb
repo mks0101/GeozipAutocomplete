@@ -15,7 +15,7 @@ class GeozipAutocompleteTest < Test::Unit::TestCase
   end
 
   def params
-    {:zip_id => 'some_zip_id', :zip => '09070-010'}
+    @@params ||= {:zip_id => 'some_zip_id', :zip => '09070-010', :country_code => 'brasil'}
   end
 
   def render(*args, &block)

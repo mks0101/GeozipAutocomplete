@@ -1,13 +1,64 @@
 GeozipAutocomplete
 ==================
 
-Introduction goes here.
+This plugin is capable of, given a field of postal code and country code of
+a site, get the address information, self-completing it via Ajax using GoogleMaps API.
 
+Supports by default brazilian and usa zip codes, but its easy to add more
+countries.
+
+It requires geokit gem installed, configured with API_KEY.
 
 Example
 =======
 
-Example goes here.
+On view:
 
+  <% form_for(@address) do |f| %>
+    <%= f.error_messages %>
+    <%= f.text_field :country %>
+    <%= zip_field :address, :zip, :country_code => :address_country, :address_fields => {:street_address => :address_address,
+                                                                                         :state  => :address_state
+                                                                                         :city   => :address_city} %>
+    <%= f.text_field :state %>
+    <%= f.text_field :city %>
+    <%= f.text_field :address %>
+  <% end %>
 
-Copyright (c) 2010 [name of plugin creator], released under the MIT license
+Using a pre-defined country:
+
+  # Just replace country_code field to pre-defined country code (example: :br for Brazil)
+  <%= zip_field :place, :zip, :country_code => :br, :address_fields => {:street_address => :place_address,
+                                                                        :state  => :place_state
+                                                                        :city   => :place_city} %>
+  <%= f.text_field :place, :state %>
+  <%= f.text_field :place, :city %>
+  <%= f.text_field :place, :address %>
+
+# address fields could be:
+# lng, lat, province, full_address, country, city, zip, district, country_code, street_address, state
+
+On controller:
+
+include GeozipAutocomplete
+
+# Optional overide:
+# def invalid_zip_format_error
+#   if params[:warn_if_invalid]
+#     render(:update){ |page| page.call 'alert', 'Format must be NNNNN-NNN' }
+#   else
+#     render :nothing => true
+#   end
+# end
+
+# def not_found_zip_error
+#   render(:update){ |page| page.call 'alert', 'This address could not be found' }
+# end
+
+Adding More Countries
+=====================
+
+- Add country strings on config/contries.yml mapping it with it's country code
+- Add zip format Regexp given a country code
+
+Copyright (c) 2010 Dalton Pinto, released under the MIT license
