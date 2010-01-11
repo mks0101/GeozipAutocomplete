@@ -3,8 +3,12 @@
 This plugin is capable of, given a field of postal code and country code of
 a site, get the address information, self-completing it via Ajax using GoogleMaps API.
 
-Supports by default brazilian and usa zip codes, but its easy to add more
+Supports by default 88 countries zip codes, but its easy to add more
 countries.
+
+Important: It's needed to add more country aliases on config/countries.yml to support
+better usage in country text fields. For better usage, use countries combo box that have
+country codes (us, br, jp, de ...) as values.
 
 It requires geokit gem installed, configured with API_KEY.
 
