@@ -1,7 +1,180 @@
-br:
-  - brasil
-  - brazil
+--- 
+ec: 
+- ecuador
+dk: 
+- denmark
+my: 
+- malaysia
+at: 
+- austria
+sk: 
+- slovakia
+pr: 
+- puerto rico
+rs: 
+- serbia
+jp: 
+- japan
+kh: 
+- cambodia
+au: 
+- australia
+cv: 
+- cape verde
+tc: 
+- turks and caicos islands
+kz: 
+- kazakhstan
+sm: 
+- san marino
+gy: 
+- guernsey
+pt: 
+- portugal
+ru: 
+- russia
+ac: 
+- ascension island
+ee: 
+- estonia
+ad: 
+- andorra
+tw: 
+- taiwan
+bn: 
+- brunei
+ax: 
+- "\xC3\x85land islands"
+hr: 
+- croatia
+lt: 
+- lithuania
+vg: 
+- british virgin islands
+cy: 
+- cyprus
+cz: 
+- czech republic
+lu: 
+- luxembourg
+fr: 
+- france
+ch: 
+- switzerland
+az: 
+- azerbaijan
+lv: 
+- latvia
+th: 
+- thailand
 us:
   - united states
   - usa
   - unites states of america
+br:
+  - brasil
+  - brazil
+il: 
+- israel
+hu: 
+- hungary
+je: 
+- jersey
+im: 
+- isle of man
+ph: 
+- philippines
+ua: 
+- ukraine
+nz: 
+- new zealand
+in: 
+- india
+io: 
+- british indian ocean territory
+ni: 
+- nigeria
+cl: 
+- chile
+bb: 
+- barbados
+li: 
+- liechtenstein
+vn: 
+- vietnam
+al: 
+- albania
+iq: 
+- iraq
+cn: 
+- china
+pl: 
+- poland
+kr: 
+- south korea
+ma: 
+- morocco
+bd: 
+- bangladesh
+de: 
+- germany
+am: 
+- armenia
+co: 
+- colombia
+lk: 
+- sri lanka
+nl: 
+- netherlands
+se: 
+- sweden
+mt: 
+- malta
+be: 
+- belgium
+is: 
+- iceland
+pn: 
+- pitcairn islands
+ro: 
+- romania
+gr: 
+- greece
+dz: 
+- algeria
+bg: 
+- bulgaria
+za: 
+- south africa
+fi: 
+- finland
+md: 
+- moldova
+sg: 
+- singapore
+gs: 
+- south georgia and the south sandwich islands
+it: 
+- italy
+tr: 
+- turkey
+cr: 
+- costa rica
+es: 
+- spain
+me: 
+- montenegro
+mx: 
+- mexico
+ar: 
+- argentina
+ca: 
+- canada
+fk: 
+- falkland islands
+"no": 
+- norway
+si: 
+- slovenia
+va: 
+- vatican
