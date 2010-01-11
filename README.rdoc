@@ -29,9 +29,9 @@ Using a pre-defined country:
   <%= zip_field :place, :zip, :country_code => :br, :address_fields => {:street_address => :place_address,
                                                                         :state  => :place_state
                                                                         :city   => :place_city} %>
-  <%= f.text_field :place, :state %>
-  <%= f.text_field :place, :city %>
-  <%= f.text_field :place, :address %>
+  <%= text_field :place, :state %>
+  <%= text_field :place, :city %>
+  <%= text_field :place, :address %>
 
 # address fields could be:
 # lng, lat, province, full_address, country, city, zip, district, country_code, street_address, state
