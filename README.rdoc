@@ -1,5 +1,4 @@
-GeozipAutocomplete
-==================
+= GeozipAutocomplete
 
 This plugin is capable of, given a field of postal code and country code of
 a site, get the address information, self-completing it via Ajax using GoogleMaps API.
@@ -9,8 +8,7 @@ countries.
 
 It requires geokit gem installed, configured with API_KEY.
 
-Example
-=======
+= Example
 
 On view:
 
@@ -40,23 +38,22 @@ Using a pre-defined country:
 
 On controller:
 
-include GeozipAutocomplete
+  include GeozipAutocomplete
 
-# Optional overide:
-# def invalid_zip_format_error
-#   if params[:warn_if_invalid]
-#     render(:update){ |page| page.call 'alert', 'Format must be NNNNN-NNN' }
-#   else
-#     render :nothing => true
-#   end
-# end
+  # Optional overide:
+  # def invalid_zip_format_error
+  #   if params[:warn_if_invalid]
+  #     render(:update){ |page| page.call 'alert', 'Format must be NNNNN-NNN' }
+  #   else
+  #     render :nothing => true
+  #   end
+  # end
 
-# def not_found_zip_error
-#   render(:update){ |page| page.call 'alert', 'This address could not be found' }
-# end
+  # def not_found_zip_error
+  #   render(:update){ |page| page.call 'alert', 'This address could not be found' }
+  # end
 
-Adding More Countries
-=====================
+= Adding More Countries
 
 - Add country strings on config/contries.yml mapping it with it's country code
 - Add zip format Regexp given a country code
